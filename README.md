@@ -7,7 +7,9 @@ Proyecto final de la plataforma Coderhouse, Ecommerce React JS creado con Create
 Para ejecutar el proyecto, asegúrate de tener Node.js y npm instalados en tu máquina. Luego, sigue estos pasos:
 
 git clone https://github.com/ronalhenao/todofutbol.git
+
 cd todofutbol
+
 npm install
 
 ## Uso
