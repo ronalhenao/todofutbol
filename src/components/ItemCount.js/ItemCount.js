@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ShoppingCart } from 'lucide-react';
 
-function ItemCount({ stock }) {
+function ItemCount({ initial, stock, onAdd }) {
   const [count, setCount] = useState(1);
 
   const handleIncrease = () => {
@@ -16,7 +16,7 @@ function ItemCount({ stock }) {
   }
 
   return (
-    <div className='flex gap-8'>
+    <>
       <div className='flex bg-neutral-300 items-center gap-6 rounded-full px-5 py-2'>
         <button
           type='button'
@@ -32,11 +32,13 @@ function ItemCount({ stock }) {
       </div>
       <button
         type='button'
+        onClick={ () => onAdd( count ) }
+        disabled={ !stock }
         className='font-normal text-sm text-neutral-50 rounded-full px-5 py-2 flex items-center gap-3 bg-neutral-600'>
           <ShoppingCart size={ 16 }/>
           <span className=' font-semibold'>Añadir al carrito</span>
       </button>
-    </div>
+    </>
   )
 }
 

@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar/NavBar'
 
 function Layout() {
   return (
-    <div className="bg-neutral-50 px-10 py-2">
+    <div className="bg-neutral-50 px-10 pt-2 pb-10">
       <NavBar />
       <main>
         <Outlet />

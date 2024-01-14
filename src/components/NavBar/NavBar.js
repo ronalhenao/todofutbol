@@ -12,25 +12,23 @@ function NavBar() {
         </NavLink>
         <nav className="flex items-center">
           <ul className="flex items-center gap-8">
-            <li className="font-normal text-base text-green-950">
+            <li className="font-normal text-base text-neutral-950">
               <NavLink to='/'>Inicio</NavLink>
             </li>
-            <li className="font-normal text-base text-green-950">
+            <li className="font-normal text-base text-neutral-950">
               <NavLink to='/categoria/hombres'>Hombres</NavLink>
             </li>
-            <li className="font-normal text-base text-green-950">
+            <li className="font-normal text-base text-neutral-950">
               <NavLink to='/categoria/mujeres'>Mujeres</NavLink>
             </li>
-            <li className="font-normal text-base text-green-950">
+            <li className="font-normal text-base text-neutral-950">
               <NavLink to='/categoria/niños'>Niños</NavLink>
             </li>
           </ul>
         </nav>
       </div>
       <div className="flex items-center gap-12">
-        <CartWidget 
-          number={ 3 }
-        />
+        <CartWidget />
       </div>
     </header>
   )
